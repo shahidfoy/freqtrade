@@ -404,7 +404,7 @@ class MyFirstStrategy(IStrategy):
         """
         dataframe.loc[
             (
-                (qtpylib.crossed_below(dataframe['rsi'], 92)) &  # Signal: RSI crosses above 70
+                (qtpylib.crossed_above(dataframe['rsi'], 92)) &  # Signal: RSI crosses above 70
                 # (dataframe['close'] > dataframe['bb_upperband']) &
                 (dataframe['close'] > dataframe['bb_middleband']) &  # Guard: tema above BB middle
                 # (dataframe['tema'] < dataframe['tema'].shift(1)) &  # Guard: tema is falling
