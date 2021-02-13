@@ -1,8 +1,14 @@
+# optimize data
 freqtrade hyperopt --hyperopt MyFirstHyperopt --hyperopt-loss SharpeHyperOptLossDaily --strategy MyFirstStrategy --config config.json -e 500 --spaces all
 
+# backtest data
 freqtrade backtesting -s MyFirstStrategy -c config.json
 
+## download data
 freqtrade download-data -t 5m -c config.json
+
+## trade
+freqtrade trade --strategy MyFirstStrategy -c config.json
 
 # trades
 "ADA/USD",
