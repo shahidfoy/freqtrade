@@ -20,6 +20,7 @@ freqtrade trade --strategy MyFirstStrategy -c config.json
 "BCH/USD",
 "DASH/USD",
 "EGLD/USD",
+"ENJ/USD",
 "EOS/USD",
 "ETH/USD",
 "HNT/USD",
@@ -29,8 +30,10 @@ freqtrade trade --strategy MyFirstStrategy -c config.json
 "NEO/USD",
 "ONE/USD",
 "RVN/USD",
+"SOL/USD",
+"STORJ/USD",
+"UNI/USD",
 "VTHO/USD",
-"XLM/USD",
 "XTZ/USD"
 
 
@@ -62,3 +65,6 @@ freqtrade trade --strategy MyFirstStrategy -c config.json
         'sell-rsi-value': 92,
         'sell-trigger': 'sell-bb_middle'
     }
+
+# update numpy
+    pip install numpy --upgrade
